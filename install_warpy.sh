@@ -78,11 +78,11 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 	fiji_executable_file="Contents/MacOS/ImageJ-macosx"
 	fiji_url="https://downloads.imagej.net/fiji/latest/fiji-latest-macos64-jdk.zip"
 elif [[ "$OSTYPE" == "msys" ]]; then
-	fiji_executable_file="ImageJ-win64.exe"
+	fiji_executable_file="fiji-windows-x64.exe"
 	fiji_url="https://downloads.imagej.net/fiji/latest/fiji-latest-win64-jdk.zip"
 fi
 
-fiji_path="$path_install/Fiji.app/$fiji_executable_file"
+fiji_path="$path_install/Fiji/$fiji_executable_file"
 
 echo "Looking for Fiji executable: $fiji_path"
 if [[ -f "$fiji_path" ]]; then
